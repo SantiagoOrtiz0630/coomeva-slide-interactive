@@ -1,0 +1,174 @@
+@font-face {
+  font-family: Product Sans;
+  src: url("../src/fonts/ProductSans/Product Sans 400.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #edf2f7;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.App-videoContainer {
+  width: 60%;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-bottom: 15px;
+}
+
+.App-video {
+  width: 100%;
+  border-radius: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.App-btn {
+  width: 60%;
+  height: auto;
+  padding: 32px 60px;
+  background-color: #fdfdff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  cursor: pointer;
+}
+
+.App-btn > div {
+  width: 150px;
+  height: 50%;
+}
+
+.App-btn > div > svg {
+  stroke-linecap: round;
+}
+
+.App-btn > h3 {
+  background-color: #fdfdff;
+  border: 3px solid #f47a20;
+  border-radius: 15px;
+  padding: 8px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #f47a20;
+  -webkit-transition: .2s ease-in-out all;
+  transition: .2s ease-in-out all;
+}
+
+.App-btn > h3:hover {
+  background-color: #f47a20;
+  color: #fdfdff;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #edf2f7;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #b8bbbf;
+  border-radius: 5px;
+}
+
+.toast-info {
+  background-color: #8dc63f !important;
+}
+
+.toast-message {
+  color: #fdfdff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.toast-error {
+  background-color: #f47a20 !important;
+}
+
+#toast-container > div {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 10px;
+  opacity: 1;
+  cursor: pointer;
+  padding: 15px 15px 15px 25px;
+}
+
+#toast-container > div:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
+#toast-container > .toast-info {
+  background-image: none !important;
+  display: none;
+}
+
+#toast-container > .toast-error {
+  background-image: none !important;
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

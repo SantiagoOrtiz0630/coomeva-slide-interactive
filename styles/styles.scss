@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Product Sans;
+    src: url('../src/fonts/ProductSans/Product\ Sans\ 400.ttf');
+}
+
+$fontTitle: 'Poppins',
+sans-serif;
+$fontText: Product Sans,
+sans-serif;
+
+$greenColor: rgb(0, 135, 82);
+$orangeColor: rgb(244, 122, 32);
+$whiteColor: rgb(253, 253, 255);
+$blackColor: rgb(20, 20, 19);
+$lightOrangeColor: rgb(255, 196, 153);
+$lightGreenColor: rgb(141, 198, 63);
+$extraLightOrangeColor: rgb(255, 240, 229);
+$grayColor: rgb(237, 242, 247);
+$darkGrayColor: rgb(184, 187, 191);
+
+$correctColor: rgb(186, 247, 225);
+$mistakeColor: rgb(247, 198, 207);
+
+$orangeGradient: linear-gradient(180deg, $lightOrangeColor 0%, rgba(255, 196, 153, 0) 100%),
+$orangeColor;
+
+$leftWidth: 193px;
+$rightWidth: 290px;
+
+$verticalPadding: 32px;
+$calificationHeight: 40px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    background-color: $grayColor;
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    &-videoContainer{
+        width: 60%;
+        height: auto;
+
+        flex-shrink: 0;
+
+        margin-bottom: 15px;
+    }
+
+    &-video{
+        width: 100%;
+        border-radius: 20px;
+        flex-shrink: 0;
+    }
+
+    &-btn{
+        width: 60%;
+        height: auto;
+
+        padding: $verticalPadding 60px;
+
+        background-color: $whiteColor;
+
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+        flex-shrink: 0;
+
+        cursor: pointer;
+
+        >div{
+            width: 150px;
+            height: 50%;
+
+            >svg{
+                stroke-linecap: round;
+            }
+        }
+
+        >h3{
+            background-color: $whiteColor;
+            border: 3px solid $orangeColor;
+
+            border-radius: 15px;
+
+            padding: 8px 20px;
+
+            font-family: $fontTitle;
+            font-size: 14px;
+
+            color: $orangeColor;
+
+            transition: .2s ease-in-out all;
+
+            &:hover{
+                background-color: $orangeColor;
+
+                color: $whiteColor;
+            }
+        }
+    }
+    //
+}
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: $grayColor;
+    border-radius: 5px,
+}
+
+*::-webkit-scrollbar-thumb {
+    background: $darkGrayColor;
+    border-radius: 5px,
+}
+
+
+//CUSTOM CSS FROM SWIPER LIB
+
+.toast-info {
+    background-color: $lightGreenColor !important;
+}
+
+.toast-message{
+    color: $whiteColor;
+    font-family: $fontTitle;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.toast-error {
+    background-color: $orangeColor !important;
+}
+
+#toast-container>div {
+    box-shadow: none;
+    border-radius: 10px;
+    opacity: 1;
+    cursor: pointer;
+
+    padding: 15px 15px 15px 25px;
+}
+
+#toast-container>div:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#toast-container>.toast-info {
+    background-image: none !important;
+    display: none;
+}
+
+#toast-container>.toast-error {
+    background-image: none !important;
+    display: none;
+}
