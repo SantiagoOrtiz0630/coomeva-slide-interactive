@@ -48,6 +48,8 @@ function NextVideo(){
 
     if(index_video >= NUM_VIDEOS){
         index_video = NUM_VIDEOS - 1;
+
+        toastr.info("Este es el ultimo slide");
     }
 
     let updateBar = index_video / (NUM_VIDEOS - 1);
@@ -62,6 +64,8 @@ function PrevVideo(){
 
     if(index_video <= 0){
         index_video = 0;
+
+        toastr.info("Este es el primer slide");
     }
 
     let updateBar = index_video / (NUM_VIDEOS - 1);
